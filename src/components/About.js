@@ -26,6 +26,13 @@ class About extends Component {
                         <h4>We are determined to provide quality.</h4>
                     </div>
                 </div>
+                <div id="aboutParagraph">
+                    <div>
+                        <div className="block1"></div>
+                        <div className="block2"></div>
+                    </div>
+                    <p><strong>Cheap Labor isn’t Skilled, Skilled labor isn’t cheap. </strong> By investing into me and my company to complete your project, you are investing into a quality product, without any shortcuts taken, to bring you the best possible end result. I will not compete with contractors who offer cheap labor and a sub par product. I will not sell jobs by offering the lowest bid. I will be trademarked by skill, quality, and workmanship and will back my work with customer satisfaction. Anybody can show up and throw a structure up as fast and as cheap as possible, that is not the way I will conduct my business. If you are looking to get a project done as cheap as possible, I will gladly reference you to other contractors in the area. </p>
+                </div>
             </div>
         )
     }

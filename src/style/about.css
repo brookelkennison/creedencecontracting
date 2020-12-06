@@ -1,7 +1,7 @@
 .About {
     /* height: 900px; */
     background-color: #f7f7f7;
-    margin: 0;
+    margin: 0 0 20px 0;
     padding: 0;
     top: -102px;
     position: relative;
@@ -51,30 +51,96 @@ h4 {
 
 #aboutMain {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: flex-end;
     margin: 20px;
 }
 
 #aboutMain > img {
     width: 100%;
-    max-width: 400px;
+    max-width: 475px;
     height: auto;
-    max-height: 306px;
-    box-shadow: 0px 0px 7px black;
+    max-height: 283px;
 }
 
 #aboutMain > div {
     margin-top: 40px;
 }
 
-@media (max-width: 600px) {
-    #aboutMain {
-        flex-direction: column;
-    }
+#aboutParagraph {
+    background-color: #707070;
+    color: #f7f7f7;
+    font-family: omnes-pro, sans-serif;
+    font-weight: 400;
+    margin-top: 1px;
+    display: flex;
+    flex-direction: row;
+}
+
+#aboutParagraph > div {
+    display: flex;
+    flex-direction: row;
+}
+
+.block1 {
+    height: 150px;
+    width: 30px;
+    background-color: #f7f7f7;
+    margin: 0 20px;
+}
+
+.block2 {
+    height: 200px;
+    width: 30px;
+    background-color: #f7f7f7;
+}
+
+p {
+    margin: 20px 35px;
+    text-align: end;
 }
 
 @media (max-width: 600px) {
+
+    #aboutMain {
+        flex-direction: column;
+    }
+
     h2 {
         margin: 50px 0px 20px 10px;
     }
+}
+
+@media (min-width: 600px) {
+
+    #aboutMain > img {
+        margin: 70px 0px 0px 10px;
+    }
+
+    #aboutMain > div {
+        margin: 10px 10px 0px 0px;
+    }
+
+    h3 {
+        margin-top: 20px;
+        font-size: 48px;
+    }
+
+    h3::first-letter {
+        font-size: 62px;
+        padding: 1px;
+    }
+
+    h4 {
+        font-size: 24px;
+    }
+
+    #aboutMain {
+        margin-bottom: 50px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
 }
