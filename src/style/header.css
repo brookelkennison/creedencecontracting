@@ -1,15 +1,12 @@
-#header-top-border {
-    height: 22px;
-    opacity: .75;
-}
-
 #header {
     display: flex;
     justify-content: space-between;
     background-color: #ffffff;
     height: 80px;
     position: fixed;
-    width: 100%
+    width: 100%;
+    box-shadow: 0px -31px rgba(112, 112, 112, 0.5);
+    margin: 14px 0 0 0;
 }
 
 .Header {
@@ -47,6 +44,7 @@
 
     #header {
         justify-content: center;
+        margin: 30px 0 0 0;
     }
 
     #logo > img {

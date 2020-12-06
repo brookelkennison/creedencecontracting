@@ -8,7 +8,6 @@ class Header extends Component {
     render() {
         return (
             <div className="Header">
-                <div id="header-top-border"></div>
                 <div id="header">
                     <div id="logo">
                         <img src={logo} alt="Logo" />
