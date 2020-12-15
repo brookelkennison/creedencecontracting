@@ -30,6 +30,31 @@
     margin-right: 20px;
 }
 
+#servicesMain {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    margin-bottom: 20px;
+}
+
+.column {
+    flex: 20%;
+    max-width: 24%;
+    padding: 0 4px;
+}
+  
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+#column4 {
+    align-self: flex-end;
+}
+
+
 @media (max-width: 600px) {
 
     #servicesBlock {
@@ -46,6 +71,21 @@
 
     #servicesParagraph > p {
         text-align: start;
+    }
+
+    
+
+}
+
+@media (max-width: 800px) {
+
+    .column {
+      flex: 48%;
+      max-width: 48%;
+    }
+
+    #column4 {
+        align-self: flex-start;
     }
 
 }
