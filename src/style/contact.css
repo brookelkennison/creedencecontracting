@@ -11,8 +11,8 @@ label {
 
 .Contact {
 	background-color: #f7f7f7;
-	top: -102px;
-	position: relative;
+	/* top: -102px;
+	position: relative; */
 	z-index: -1;
 	color: #707070;
 	font-family: omnes-pro, sans-serif;

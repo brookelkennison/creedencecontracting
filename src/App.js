@@ -4,6 +4,7 @@ import Slogan from './components/Slogan.js';
 import About from './components/About.js';
 import Services from './components/Services.js';
 import Contact from './components/Contact.js';
+import Footer from './components/Footer.js';
 
 function App() {
 	return (
@@ -13,6 +14,7 @@ function App() {
 			<About />
 			<Services />
 			<Contact />
+			<Footer />
 		</div>
 	);
 }

@@ -6,8 +6,8 @@
 
 .Services {
 	background-color: #f7f7f7;
-	top: -102px;
-	position: relative;
+	/* top: -102px;
+	position: relative; */
 	z-index: -1;
 }
 
