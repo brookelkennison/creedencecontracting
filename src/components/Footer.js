@@ -19,9 +19,13 @@ class Footer extends Component {
 						<p>North Manchester, Indiana</p>
 					</div>
 					<div className='footerColumn' id='copyright'>
-						<h3>THIS IS OUR CREED</h3>
-						<h4>#CreedenceContractingLLC</h4>
-						<p>Copyright 2020 Kennison Creative - All Rights Reserved</p>
+						<div>
+							<h3>THIS IS OUR CREED</h3>
+							<h4>#CreedenceContractingLLC</h4>
+						</div>
+						<div>
+							<p>Copyright 2020 Kennison Creative - All Rights Reserved</p>
+						</div>
 					</div>
 					<div className='footerColumn'>
 						<img src={logo} alt='logo' id='footerLogo' />
