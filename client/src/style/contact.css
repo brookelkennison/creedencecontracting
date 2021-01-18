@@ -1,0 +1,97 @@
+form {
+	display: flex;
+	flex-direction: column;
+	margin: 10px;
+	font-size: 14px;
+}
+
+label {
+	margin: 5px 0px;
+}
+
+.Contact {
+	background-color: #f7f7f7;
+	/* top: -102px;
+	position: relative; */
+	z-index: -1;
+	color: #707070;
+	font-family: omnes-pro, sans-serif;
+}
+
+.formRow {
+	display: flex;
+}
+
+.formColumn {
+	display: flex;
+	flex-direction: column;
+	margin: 10px 25px;
+}
+
+.formColumn > input {
+	height: 25px;
+	width: 325px;
+	border: solid 1px rgba(112, 112, 112, 0.5);
+	border-radius: 5px;
+}
+
+.option > input {
+	border: solid 1px rgba(112, 112, 112, 0.5);
+}
+
+.option > label {
+	margin-right: 20px;
+}
+
+.option {
+	display: flex;
+	align-items: center;
+}
+
+#contactHeader {
+	margin-top: 20px;
+}
+
+#contactMain {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#formHeader {
+	font-family: sauna-new, sans-serif;
+	font-weight: bold;
+	font-size: 36px;
+	margin: 10px 0 0 0;
+}
+
+#contactMain > p {
+	margin: 0;
+	position: relative;
+	bottom: 12px;
+	font-weight: 500;
+	font-size: 17px;
+}
+
+#submitButton {
+	color: white;
+	background-color: #f1bc5c;
+	border: none;
+	height: 30px;
+	width: 100px;
+	border-radius: 25px;
+	margin: 25px;
+}
+
+#textbox {
+	height: 80px;
+	width: 705px;
+}
+
+#preferenceOptions {
+	display: flex;
+}
+
+#preferenceOptions > div {
+	margin-right: 20px;
+}
