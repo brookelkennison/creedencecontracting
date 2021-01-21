@@ -5,7 +5,54 @@ import '../index.css';
 class Contact extends Component {
 	constructor(props) {
 		super(props);
-		this.state = { value: '' };
+		this.handleChange = this.handleChange.bind(this);
+		this.handleSubmit = this.handleSubmit.bind(this);
+		this.onClick = this.onClick.bind(this);
+		this.state = {
+			name: '',
+			phone: '',
+			email: '',
+			zipcode: '',
+			message: '',
+			checkboxPhone: false,
+			checkboxEmail: false,
+			checkboxNoPreference: false,
+		};
+	}
+	onClick(e, checkbox) {
+		this.setState({
+			[checkbox]: e.target.value,
+		});
+	}
+	handleChange(event, inputField) {
+		this.setState({
+			[inputField]: event.target.value,
+		});
+	}
+	handleSubmit(event) {
+		const payload = {
+			name: this.state.name,
+			phone: this.state.phone,
+			email: this.state.email,
+			zipcode: this.state.zipcode,
+			message: this.state.message,
+			checkboxPhone: this.state.checkboxPhone,
+			checkboxEmail: this.state.checkboxEmail,
+			checkboxNoPreference: this.state.checkboxNoPreference,
+		};
+		fetch('/', {
+			method: 'POST',
+			body: JSON.stringify(payload),
+			headers: {
+				'Content-Type': 'application/json',
+			},
+		})
+			.then(() => {
+				console.log('Data has been sent to the server');
+			})
+			.catch(() => {
+				console.log('Internal server error');
+			});
 	}
 	render() {
 		return (
@@ -17,31 +64,31 @@ class Contact extends Component {
 				<div id='contactMain'>
 					<h3 id='formHeader'>Please fill out this form</h3>
 					<p>and we will reach out as soon as possible.</p>
-					<form>
+					<form onSubmit={this.handleSubmit}>
 						<div className='formRow'>
 							<div className='formColumn'>
 								<label>Your Name*</label>
-								<input type='text' />
+								<input type='text' name='name' value={this.state.name} onChange={(event) => this.handleChange(event, 'name')} />
 							</div>
 							<div className='formColumn'>
 								<label>Your Phone*</label>
-								<input type='text' />
+								<input type='tel' name='phone' value={this.state.phone} onChange={(event) => this.handleChange(event, 'phone')} />
 							</div>
 						</div>
 						<div className='formRow'>
 							<div className='formColumn'>
 								<label>Your Email*</label>
-								<input type='text' />
+								<input type='text' name='email' value={this.state.email} onChange={(event) => this.handleChange(event, 'email')} />
 							</div>
 							<div className='formColumn'>
 								<label>Your Zip Code*</label>
-								<input type='text' />
+								<input type='text' name='zipcode' value={this.state.zipcode} onChange={(event) => this.handleChange(event, 'zipcode')} />
 							</div>
 						</div>
 						<div className='formRow'>
 							<div className='formColumn'>
 								<label>How can we help you?</label>
-								<input type='text' id='textbox' />
+								<input type='textbox' id='textbox' name='message' value={this.state.message} onChange={(event) => this.handleChange(event, 'message')} />
 							</div>
 						</div>
 						<div className='formRow'>
@@ -49,15 +96,33 @@ class Contact extends Component {
 								<label>Preference of contact*</label>
 								<div id='preferenceOptions'>
 									<div className='option'>
-										<input type='checkbox' />
+										<input
+											type='checkbox'
+											name='checkboxPhone'
+											onClick={(e) => this.onClick(e, !this.state.checkboxPhone)}
+											value={this.state.checkboxPhone}
+											onChange={(event) => this.handleChange(event, 'checkboxPhone')}
+										/>
 										<label>Phone</label>
 									</div>
 									<div className='option'>
-										<input type='checkbox' />
+										<input
+											type='checkbox'
+											name='checkboxEmail'
+											onClick={(e) => this.onClick(e, !this.state.checkboxEmail)}
+											value={this.state.checkboxEmail}
+											onChange={(event) => this.handleChange(event, 'checkboxEmail')}
+										/>
 										<label>Email</label>
 									</div>
 									<div className='option'>
-										<input type='checkbox' />
+										<input
+											type='checkbox'
+											name='checkboxNoPreference'
+											onClick={(e) => this.onClick(e, !this.state.checkboxNoPreference)}
+											value={this.state.checkboxNoPreference}
+											onChange={(event) => this.handleChange(event, 'checkboxNoPreference')}
+										/>
 										<label>No Preference</label>
 									</div>
 								</div>
