@@ -40,7 +40,7 @@ class Contact extends Component {
 			checkboxEmail: this.state.checkboxEmail,
 			checkboxNoPreference: this.state.checkboxNoPreference,
 		};
-		fetch('/', {
+		fetch('/api/contact', {
 			method: 'POST',
 			body: JSON.stringify(payload),
 			headers: {
