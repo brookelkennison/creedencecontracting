@@ -16,6 +16,16 @@ app.get('/api/contact', function (req, res) {});
 
 app.post('/api/contact', function (req, res) {
 	res.set('Content-Type', 'application/json');
-	sendEmail();
+	const messageInfo = {
+		contactname,
+		phone,
+		email,
+		zipcode,
+		message,
+		checkboxPhone,
+		checkboxEmail,
+		checkboxNoPreference,
+	};
+	sendEmail(messageInfo);
 	res.send();
 });

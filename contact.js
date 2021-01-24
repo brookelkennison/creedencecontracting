@@ -1,14 +1,14 @@
 const mailjet = require('node-mailjet').connect('161ba37b8ac65c1be7c6e18c52896f2a', '46b0a816df421be1f62864a34c830072');
 
-function sendEmail() {
+function sendEmail(messageInfo) {
 	return mailjet
 		.post('send', { version: 'v3.1' })
 		.request({
 			Messages: [
 				{
 					From: {
-						Email: 'brookelkennison@gmail.com',
-						Name: 'Brooke',
+						Email: messageInfo.email,
+						Name: messageInfo.nameContact,
 					},
 					To: [
 						{
