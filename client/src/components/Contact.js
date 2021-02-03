@@ -9,7 +9,7 @@ class Contact extends Component {
 		this.handleSubmit = this.handleSubmit.bind(this);
 		this.onClick = this.onClick.bind(this);
 		this.state = {
-			name: '',
+			nameContact: '',
 			phone: '',
 			email: '',
 			zipcode: '',
@@ -21,7 +21,7 @@ class Contact extends Component {
 	}
 	onClick(e, checkbox) {
 		this.setState({
-			[checkbox]: e.target.value,
+			[checkbox]: !e.target.value,
 		});
 	}
 	handleChange(event, inputField) {
@@ -29,9 +29,9 @@ class Contact extends Component {
 			[inputField]: event.target.value,
 		});
 	}
-	handleSubmit(event) {
+	handleSubmit() {
 		const payload = {
-			name: this.state.name,
+			nameContact: this.state.nameContact,
 			phone: this.state.phone,
 			email: this.state.email,
 			zipcode: this.state.zipcode,
@@ -68,7 +68,7 @@ class Contact extends Component {
 						<div className='formRow'>
 							<div className='formColumn'>
 								<label>Your Name*</label>
-								<input type='text' name='name' value={this.state.name} onChange={(event) => this.handleChange(event, 'name')} />
+								<input type='text' name='nameContact' value={this.state.nameContact} onChange={(event) => this.handleChange(event, 'nameContact')} />
 							</div>
 							<div className='formColumn'>
 								<label>Your Phone*</label>
@@ -99,7 +99,7 @@ class Contact extends Component {
 										<input
 											type='checkbox'
 											name='checkboxPhone'
-											onClick={(e) => this.onClick(e, !this.state.checkboxPhone)}
+											onClick={(e) => this.onClick(e, this.state.checkboxPhone)}
 											value={this.state.checkboxPhone}
 											onChange={(event) => this.handleChange(event, 'checkboxPhone')}
 										/>
@@ -109,7 +109,7 @@ class Contact extends Component {
 										<input
 											type='checkbox'
 											name='checkboxEmail'
-											onClick={(e) => this.onClick(e, !this.state.checkboxEmail)}
+											onClick={(e) => this.onClick(e, this.state.checkboxEmail)}
 											value={this.state.checkboxEmail}
 											onChange={(event) => this.handleChange(event, 'checkboxEmail')}
 										/>
@@ -119,7 +119,7 @@ class Contact extends Component {
 										<input
 											type='checkbox'
 											name='checkboxNoPreference'
-											onClick={(e) => this.onClick(e, !this.state.checkboxNoPreference)}
+											onClick={(e) => this.onClick(e, this.state.checkboxNoPreference)}
 											value={this.state.checkboxNoPreference}
 											onChange={(event) => this.handleChange(event, 'checkboxNoPreference')}
 										/>

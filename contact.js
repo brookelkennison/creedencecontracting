@@ -16,6 +16,7 @@ function sendEmail(messageInfo) {
 							Name: 'Test',
 						},
 					],
+					// HTMLPart: '<h1>hi</h1>',
 					TemplateID: 2226328,
 					TemplateLanguage: true,
 					Subject: 'Test Email',

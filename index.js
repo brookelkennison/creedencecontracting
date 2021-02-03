@@ -3,7 +3,8 @@ const app = express();
 const sendEmail = require('./contact');
 
 const port = process.env.PORT || 5000;
-
+app.use(express.json());
+app.use(express.urlencoded());
 // console.log that your server is up and running
 app.listen(port, () => console.log(`Listening on port ${port}`));
 
@@ -16,16 +17,6 @@ app.get('/api/contact', function (req, res) {});
 
 app.post('/api/contact', function (req, res) {
 	res.set('Content-Type', 'application/json');
-	const messageInfo = {
-		contactname,
-		phone,
-		email,
-		zipcode,
-		message,
-		checkboxPhone,
-		checkboxEmail,
-		checkboxNoPreference,
-	};
-	sendEmail(messageInfo);
+	sendEmail(req.body);
 	res.send();
 });
