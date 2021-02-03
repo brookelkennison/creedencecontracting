@@ -13,10 +13,10 @@ app.get('/express_backend', (req, res) => {
 	res.send({ express: 'YOUR EXPRESS BACKEND IS CONNECTED TO REACT' });
 });
 
-app.get('/api/contact', function (req, res) {});
-
 app.post('/api/contact', function (req, res) {
 	res.set('Content-Type', 'application/json');
 	sendEmail(req.body);
 	res.send();
 });
+
+app.get('/api/contact', function (req, res) {});
