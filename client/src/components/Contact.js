@@ -7,7 +7,8 @@ class Contact extends Component {
 		super(props);
 		this.handleChange = this.handleChange.bind(this);
 		this.handleSubmit = this.handleSubmit.bind(this);
-		this.onClick = this.onClick.bind(this);
+		this.handleCheckbox = this.handleCheckbox.bind(this);
+		this.getContactPreference = this.getContactPreference.bind(this);
 		this.state = {
 			nameContact: '',
 			phone: '',
@@ -19,15 +20,26 @@ class Contact extends Component {
 			checkboxNoPreference: false,
 		};
 	}
-	onClick(e, checkbox) {
+	handleCheckbox(checkbox) {
 		this.setState({
-			[checkbox]: !e.target.value,
+			[checkbox]: !this.state[checkbox],
 		});
 	}
 	handleChange(event, inputField) {
 		this.setState({
 			[inputField]: event.target.value,
 		});
+	}
+	getContactPreference() {
+		let contactPreference = 'no preference';
+		if (this.state.checkboxEmail && this.state.checkboxPhone) {
+			return contactPreference;
+		} else if (this.state.checkboxEmail) {
+			return (contactPreference = 'email');
+		} else if (this.state.checkboxPhone) {
+			return (contactPreference = 'phone');
+		}
+		return contactPreference;
 	}
 	handleSubmit() {
 		const payload = {
@@ -36,9 +48,7 @@ class Contact extends Component {
 			email: this.state.email,
 			zipcode: this.state.zipcode,
 			message: this.state.message,
-			checkboxPhone: this.state.checkboxPhone,
-			checkboxEmail: this.state.checkboxEmail,
-			checkboxNoPreference: this.state.checkboxNoPreference,
+			contactPreference: this.getContactPreference(),
 		};
 		fetch('/api/contact', {
 			method: 'POST',
@@ -96,33 +106,15 @@ class Contact extends Component {
 								<label>Preference of contact*</label>
 								<div id='preferenceOptions'>
 									<div className='option'>
-										<input
-											type='checkbox'
-											name='checkboxPhone'
-											onClick={(e) => this.onClick(e, this.state.checkboxPhone)}
-											value={this.state.checkboxPhone}
-											onChange={(event) => this.handleChange(event, 'checkboxPhone')}
-										/>
+										<input type='checkbox' name='checkboxPhone' onChange={() => this.handleCheckbox('checkboxPhone')} value={this.state.checkboxPhone} />
 										<label>Phone</label>
 									</div>
 									<div className='option'>
-										<input
-											type='checkbox'
-											name='checkboxEmail'
-											onClick={(e) => this.onClick(e, this.state.checkboxEmail)}
-											value={this.state.checkboxEmail}
-											onChange={(event) => this.handleChange(event, 'checkboxEmail')}
-										/>
+										<input type='checkbox' name='checkboxEmail' onChange={() => this.handleCheckbox('checkboxEmail')} value={this.state.checkboxEmail} />
 										<label>Email</label>
 									</div>
 									<div className='option'>
-										<input
-											type='checkbox'
-											name='checkboxNoPreference'
-											onClick={(e) => this.onClick(e, this.state.checkboxNoPreference)}
-											value={this.state.checkboxNoPreference}
-											onChange={(event) => this.handleChange(event, 'checkboxNoPreference')}
-										/>
+										<input type='checkbox' name='checkboxNoPreference' onChange={() => this.handleCheckbox('checkboxNoPreference')} value={this.state.checkboxNoPreference} />
 										<label>No Preference</label>
 									</div>
 								</div>
