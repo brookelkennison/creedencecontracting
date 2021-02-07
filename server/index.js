@@ -1,8 +1,11 @@
+const path = require('path');
 const express = require('express');
 const app = express();
 const { sendEmail } = require('./contact');
 
 const port = process.env.PORT || 5000;
+const buildPath = path.join(__dirname, '..', 'build');
+app.use(express.static(buildPath));
 app.use(express.json());
 app.use(express.urlencoded());
 // console.log that your server is up and running

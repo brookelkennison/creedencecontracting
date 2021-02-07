@@ -1,0 +1,25 @@
+{
+  "name": "creedencecontracting",
+  "version": "1.0.0",
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "example.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-mailjet": "^3.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brookelkennison/creedencecontracting.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brookelkennison/creedencecontracting/issues"
+  },
+  "homepage": "https://github.com/brookelkennison/creedencecontracting#readme"
+}
