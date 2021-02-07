@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.43185482.chunk.css",
+    "main.js": "/static/js/main.b8342a2d.chunk.js",
+    "main.js.map": "/static/js/main.b8342a2d.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.1844e18a.js",
+    "runtime-main.js.map": "/static/js/runtime-main.1844e18a.js.map",
+    "static/js/2.674c82e6.chunk.js": "/static/js/2.674c82e6.chunk.js",
+    "static/js/2.674c82e6.chunk.js.map": "/static/js/2.674c82e6.chunk.js.map",
+    "static/js/3.2e40f509.chunk.js": "/static/js/3.2e40f509.chunk.js",
+    "static/js/3.2e40f509.chunk.js.map": "/static/js/3.2e40f509.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.43185482.chunk.css.map": "/static/css/main.43185482.chunk.css.map",
+    "static/js/2.674c82e6.chunk.js.LICENSE.txt": "/static/js/2.674c82e6.chunk.js.LICENSE.txt",
+    "static/media/aboutGrill.3534cc7b.jpg": "/static/media/aboutGrill.3534cc7b.jpg",
+    "static/media/arrowTransition.a2c2f40a.jpg": "/static/media/arrowTransition.a2c2f40a.jpg",
+    "static/media/slogan.css": "/static/media/background.76191d60.jpg",
+    "static/media/logo.b6992514.jpg": "/static/media/logo.b6992514.jpg",
+    "static/media/polebarn.b8499ae9.jpg": "/static/media/polebarn.b8499ae9.jpg",
+    "static/media/poolPatio.7ce00793.jpg": "/static/media/poolPatio.7ce00793.jpg",
+    "static/media/poolPatio2.6c8260dd.jpg": "/static/media/poolPatio2.6c8260dd.jpg",
+    "static/media/porch.4fc3b7d0.jpg": "/static/media/porch.4fc3b7d0.jpg",
+    "static/media/porch2.431550cc.jpg": "/static/media/porch2.431550cc.jpg",
+    "static/media/shower.dbbb2a1c.jpg": "/static/media/shower.dbbb2a1c.jpg",
+    "static/media/steps.e58dbd4c.jpg": "/static/media/steps.e58dbd4c.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1844e18a.js",
+    "static/js/2.674c82e6.chunk.js",
+    "static/css/main.43185482.chunk.css",
+    "static/js/main.b8342a2d.chunk.js"
+  ]
+}
