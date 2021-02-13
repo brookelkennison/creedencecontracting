@@ -11,8 +11,6 @@ label {
 
 .Contact {
 	background-color: #f7f7f7;
-	/* top: -102px;
-	position: relative; */
 	z-index: -1;
 	color: #707070;
 	font-family: omnes-pro, sans-serif;
@@ -86,6 +84,10 @@ label {
 #textbox {
 	height: 80px;
 	width: 705px;
+	border: solid 1px rgba(112, 112, 112, 0.5);
+	border-radius: 5px;
+	font-family: omnes-pro, sans-serif;
+	font-weight: 600;
 }
 
 #preferenceOptions {
@@ -94,4 +96,36 @@ label {
 
 #preferenceOptions > div {
 	margin-right: 20px;
+}
+
+@media (max-width: 600px) {
+	form {
+		font-size: 18px;
+	}
+	.formColumn > input {
+		height: 25px;
+		width: 275px;
+	}
+
+	.formRow {
+		display: flex;
+		flex-direction: column;
+	}
+	#textbox {
+		height: 80px;
+		width: 325px;
+		border: solid 1px rgba(112, 112, 112, 0.5);
+		border-radius: 5px;
+		font-family: omnes-pro, sans-serif;
+		font-weight: 600;
+	}
+
+	#submitButton {
+		align-self: center;
+	}
+
+	#preferenceOptions {
+		display: flex;
+		flex-direction: column;
+	}
 }

@@ -10,10 +10,6 @@
 	z-index: 1;
 }
 
-/* .Header {
-	height: 102px;
-} */
-
 #logo > img {
 	max-width: 250px;
 	height: auto;
@@ -43,6 +39,7 @@
 
 @media (max-width: 600px) {
 	#header {
+		position: fixed;
 		justify-content: center;
 		margin: 30px 0 0 0;
 	}
