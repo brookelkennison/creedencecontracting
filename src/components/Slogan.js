@@ -8,7 +8,7 @@ class Slogan extends Component {
 		return (
 			<div className='Slogan'>
 				<h1>"Competing with the best to build you the best"</h1>
-				<img src={arrowTransition} alt='arrowTransition' />
+				<img src={arrowTransition} alt='arrowTransition' className='scrollToAbout' ref={this.props.refProp} />
 			</div>
 		);
 	}

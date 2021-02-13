@@ -7,7 +7,7 @@ class About extends Component {
 	render() {
 		return (
 			<div className='About'>
-				<div className='sectionHeader' ref={this.props.refProp}>
+				<div className='sectionHeader'>
 					<h2>ABOUT</h2>
 				</div>
 				<div id='aboutMain'>
