@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../style/header.css';
 import '../index.css';
 import logo from '../assets/logo.jpg';
+// import executeScroll from '../App';
 
 class Header extends Component {
 	render() {
@@ -12,9 +13,11 @@ class Header extends Component {
 						<img src={logo} alt='Logo' />
 					</div>
 					<div className='nav'>
-						<a href='about'>ABOUT</a>
-						<a href='services'>SERVICES</a>
-						<a href='contact'>CONTACT</a>
+						<a href=' ' onClick={this.props.scrollTo}>
+							ABOUT
+						</a>
+						<a href=' '>SERVICES</a>
+						<a href=' '>CONTACT</a>
 					</div>
 				</div>
 			</div>

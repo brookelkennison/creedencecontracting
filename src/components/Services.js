@@ -36,20 +36,9 @@ class Services extends Component {
 				</div>
 				<div id='servicesParagraph'>
 					<p>
-						<strong>Creedence Contracting LLC</strong> is an
-						Independent Contracting Company with over 10 years of
-						experience. Our company specializes in Outdoor
-						Structures such as Custom Decks, Gazebos, Pergolas,
-						Recreational Areas, Porches, Sun Rooms, Post Framed
-						Buildings and Garages. We also have years of experience
-						in New Construction, Remodeling, Interior and Exterior
-						Finish, Metal Roofing, Tile and much more. By investing
-						into my company, you are investing into a quality
-						product, without any shortcuts taken, to bring you the
-						best possible end result. I will not compete with
-						contractors who offer cheap labor and a sub par product.
-						We are trademarked by skill, quality, and workmanship
-						and will back our work with customer satisfaction.
+						<strong>Creedence Contracting LLC</strong> is an Independent Contracting Company with over 10 years of experience. Our company specializes in Outdoor Structures such as Custom
+						Decks, Gazebos, Pergolas, Recreational Areas, Porches, Sun Rooms, Post Framed Buildings and Garages. We also have years of experience in New Construction, Remodeling, Interior
+						and Exterior Finish, Metal Roofing, Custom Trim, Tile and so much more. We handle every project with knowledge and expertise and will stop at nothing to build you the best.
 					</p>
 					<div>
 						<div className='block1'></div>

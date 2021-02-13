@@ -8,11 +8,18 @@ import Contact from './components/Contact.js';
 import Footer from './components/Footer.js';
 
 class App extends Component {
-	state = {
-		data: null,
-	};
+	constructor(props) {
+		super(props);
+		this.myRef = React.createRef();
+		this.executeScroll = this.executeScroll.bind(this);
+		this.state = {
+			data: null,
+			recievedRef: null,
+		};
+	}
 
 	componentDidMount() {
+		this.setState({ recievedRef: this.myRef.current });
 		// Call our fetch function below once the component mounts
 		this.callBackendAPI()
 			.then((res) => this.setState({ data: res.express }))
@@ -28,12 +35,18 @@ class App extends Component {
 		}
 		return body;
 	};
+
+	executeScroll(event) {
+		event.preventDefault();
+		this.state.recievedRef.scrollIntoView();
+	}
+
 	render() {
 		return (
 			<div className='App'>
-				<Header />
+				<Header scrollTo={this.executeScroll} />
 				<Slogan />
-				<About />
+				<About refProp={this.myRef} />
 				<Services />
 				<Contact />
 				<Footer />
