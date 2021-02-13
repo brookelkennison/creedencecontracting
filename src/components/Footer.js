@@ -15,7 +15,9 @@ class Footer extends Component {
 				<div className='transitionBlock'></div>
 				<div id='footerMain'>
 					<div className='footerColumn' id='location'>
-						<img src={facebookIcon} alt=' ' />
+						<a href='https://www.facebook.com/CreedenceContractingLLC'>
+							<img src={facebookIcon} alt='facebook icon' />
+						</a>
 						<p>North Manchester, Indiana</p>
 					</div>
 					<div className='footerColumn' id='copyright'>
@@ -24,13 +26,14 @@ class Footer extends Component {
 							<h4>#CreedenceContractingLLC</h4>
 						</div>
 						<div>
-							<p>Copyright 2020 Kennison Creative - All Rights Reserved</p>
+							<p id='desktopCopyright'>© Copyright 2021 Kennison Creative - All Rights Reserved</p>
 						</div>
 					</div>
 					<div className='footerColumn'>
 						<img src={logo} alt='logo' id='footerLogo' />
 					</div>
 				</div>
+				<p id='mobileCopyright'>© Copyright 2021 Kennison Creative - All Rights Reserved</p>
 			</div>
 		);
 	}

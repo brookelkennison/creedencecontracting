@@ -98,7 +98,7 @@ class Contact extends Component {
 						<div className='formRow'>
 							<div className='formColumn'>
 								<label>How can we help you?</label>
-								<input type='textbox' id='textbox' name='message' value={this.state.message} onChange={(event) => this.handleChange(event, 'message')} />
+								<textarea type='textarea' id='textbox' name='message' value={this.state.message} onChange={(event) => this.handleChange(event, 'message')} />
 							</div>
 						</div>
 						<div className='formRow'>
