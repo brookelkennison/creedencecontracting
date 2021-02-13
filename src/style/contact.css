@@ -122,6 +122,8 @@ label {
 
 	#submitButton {
 		align-self: center;
+		-webkit-appearance: none;
+		-moz-appearance: none;
 	}
 
 	#preferenceOptions {
