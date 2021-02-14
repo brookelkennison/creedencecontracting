@@ -65,6 +65,7 @@ class Contact extends Component {
 			.then(() => {
 				window.location = '/';
 				this.setState({ isSubmitted: false });
+				alert('Thanks for reaching out! We will be in contact soon.')
 				console.log('Data has been sent to the server');
 			})
 			.catch(() => {
