@@ -3,11 +3,11 @@ import '../style/services.css';
 import '../index.css';
 import steps from '../assets/services/steps.jpg';
 import polebarn from '../assets/services/polebarn.jpg';
-import porch from '../assets/services/porch.jpg';
+import services1 from '../assets/services/services1.jpg';
 import poolPatio from '../assets/services/poolPatio.jpg';
-import poolPatio2 from '../assets/services/poolPatio2.jpg';
-import porch2 from '../assets/services/porch2.jpg';
-import shower from '../assets/services/shower.jpg';
+import services4 from '../assets/services/services4.jpg';
+import services5 from '../assets/services/services5.jpg';
+import services6 from '../assets/services/services6.jpg';
 
 class Services extends Component {
 	render() {
@@ -20,18 +20,18 @@ class Services extends Component {
 				<div id='servicesMain'>
 					<div className='column'>
 						<img src={polebarn} alt='polebarn' />
-						<img src={steps} alt='steps' />
+						<img src={services6} alt='' />
 					</div>
 					<div className='column'>
 						<img src={poolPatio} alt='pool patio' />
-						<img src={porch} alt='porch' />
+						<img src={services1} alt='home construction' />
 					</div>
 					<div className='column'>
-						<img src={poolPatio2} alt='pool patio' />
-						<img src={shower} alt='shower' />
+						<img src={steps} alt='steps' />
+						<img src={services5} alt='' />
 					</div>
 					<div className='column' id='column4'>
-						<img src={porch2} alt='porch' />
+						<img src={services4} alt='pool patio' />
 					</div>
 				</div>
 				<div id='servicesParagraph'>
