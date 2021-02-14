@@ -57,9 +57,9 @@ h2 {
 
 #aboutMain > img {
 	width: 100%;
-	max-width: 475px;
+	max-width: 400px;
 	height: auto;
-	max-height: 283px;
+	max-height: 534px;
 }
 
 #aboutMain > div {
@@ -100,6 +100,10 @@ p {
 }
 
 @media (max-width: 600px) {
+	#aboutParagraph {
+		font-size: 18px;
+	}
+
 	#aboutMain {
 		flex-direction: column;
 	}
@@ -159,7 +163,4 @@ p {
 	#aboutParagraph > p {
 		text-align: end;
 	}
-	/* p {
-        font-size: 18px;
-    } */
 }
