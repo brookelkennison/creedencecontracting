@@ -58,6 +58,7 @@ class Contact extends Component {
 			},
 		})
 			.then(() => {
+				window.location = '/';
 				console.log('Data has been sent to the server');
 			})
 			.catch(() => {
