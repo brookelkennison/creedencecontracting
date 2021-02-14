@@ -8,6 +8,7 @@ class Contact extends Component {
 		this.handleChange = this.handleChange.bind(this);
 		this.handleSubmit = this.handleSubmit.bind(this);
 		this.handleCheckbox = this.handleCheckbox.bind(this);
+		this.isRequired = this.isRequired.bind(this);
 		this.getContactPreference = this.getContactPreference.bind(this);
 		this.state = {
 			nameContact: '',
@@ -18,6 +19,7 @@ class Contact extends Component {
 			checkboxPhone: false,
 			checkboxEmail: false,
 			checkboxNoPreference: false,
+			isSubmitted: false,
 		};
 	}
 	handleCheckbox(checkbox) {
@@ -41,6 +43,9 @@ class Contact extends Component {
 		}
 		return contactPreference;
 	}
+	isRequired() {
+		this.setState({ isSubmitted: true });
+	}
 	handleSubmit() {
 		const payload = {
 			nameContact: this.state.nameContact,
@@ -59,6 +64,7 @@ class Contact extends Component {
 		})
 			.then(() => {
 				window.location = '/';
+				this.setState({ isSubmitted: false });
 				console.log('Data has been sent to the server');
 			})
 			.catch(() => {
@@ -78,22 +84,44 @@ class Contact extends Component {
 					<form onSubmit={this.handleSubmit}>
 						<div className='formRow'>
 							<div className='formColumn'>
-								<label>Your Name*</label>
-								<input type='text' name='nameContact' value={this.state.nameContact} onChange={(event) => this.handleChange(event, 'nameContact')} />
+								<label>
+									Your Name*
+									{this.state.isSubmitted === true && (this.state.nameContact === '' || this.state.nameContact === null) ? (
+										<span className='errorMsg'>    This field is required </span>
+									) : null}
+								</label>
+								<input type='text' name='nameContact' value={this.state.nameContact} required onChange={(event) => this.handleChange(event, 'nameContact')} />
 							</div>
 							<div className='formColumn'>
-								<label>Your Phone*</label>
-								<input type='tel' name='phone' value={this.state.phone} onChange={(event) => this.handleChange(event, 'phone')} />
+								<label>
+									Your Phone*
+									{this.state.isSubmitted === true && (this.state.phone === '' || this.state.phone === null) ? (
+										<span className='errorMsg'>    This field is required </span>
+									) : null}
+								</label>
+
+								<input type='tel' name='phone' value={this.state.phone} required onChange={(event) => this.handleChange(event, 'phone')} />
 							</div>
 						</div>
 						<div className='formRow'>
 							<div className='formColumn'>
-								<label>Your Email*</label>
-								<input type='text' name='email' value={this.state.email} onChange={(event) => this.handleChange(event, 'email')} />
+								<label>
+									Your Email*
+									{this.state.isSubmitted === true && (this.state.email === '' || this.state.email === null) ? (
+										<span className='errorMsg'>    This field is required </span>
+									) : null}
+								</label>
+								
+								<input type='text' name='email' value={this.state.email} required onChange={(event) => this.handleChange(event, 'email')} />
 							</div>
 							<div className='formColumn'>
-								<label>Your Zip Code*</label>
-								<input type='text' name='zipcode' value={this.state.zipcode} onChange={(event) => this.handleChange(event, 'zipcode')} />
+								<label>
+									Your Zip Code*
+									{this.state.isSubmitted === true && (this.state.zipcode === '' || this.state.zipcode === null) ? (
+										<span className='errorMsg'>    This field is required </span>
+									) : null}
+								</label>
+								<input type='text' name='zipcode' value={this.state.zipcode} required onChange={(event) => this.handleChange(event, 'zipcode')} />
 							</div>
 						</div>
 						<div className='formRow'>
@@ -122,7 +150,7 @@ class Contact extends Component {
 							</div>
 						</div>
 						<div className='formRow'>
-							<input type='submit' value='SEND' id='submitButton' />
+							<input type='submit' value='SEND' id='submitButton' onClick={this.isRequired} />
 						</div>
 					</form>
 				</div>

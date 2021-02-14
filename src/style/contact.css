@@ -46,6 +46,12 @@ label {
 	align-items: center;
 }
 
+.errorMsg {
+	font-size: 14px;
+	margin: 0;
+	color: #d60004;
+}
+
 #contactHeader {
 	margin-top: 20px;
 }
