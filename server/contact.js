@@ -9,12 +9,12 @@ function sendEmail(messageInfo) {
 				{
 					From: {
 						Email: 'kennisoncreative@gmail.com',
-						Name: 'Website',
+						Name: 'Website Contact Form',
 					},
 					To: [
 						{
-							Email: 'kennisoncreative@gmail.com',
-							Name: 'Test',
+							Email: 'jdavis.ccontracting@gmail.com',
+							Name: 'Creedence Contracting',
 						},
 					],
 					TemplateID: 2378638,
