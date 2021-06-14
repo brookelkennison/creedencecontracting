@@ -114,8 +114,6 @@
 	.carousel-inner {
 		display: flex;
 		align-items: center;
-		flex-wrap: nowrap;
-		overflow-x: auto;
 		width: auto;
 	}
 
