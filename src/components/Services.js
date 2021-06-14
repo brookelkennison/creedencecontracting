@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import '../style/services.css';
 import '../index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Carousel } from 'react-bootstrap';
+import Carousel from 'react-bootstrap/Carousel';
 import steps from '../assets/services/steps.jpg';
 import polebarn from '../assets/services/polebarn.jpg';
 import services1 from '../assets/services/services1.jpg';
@@ -13,6 +13,46 @@ import services6 from '../assets/services/services6.jpg';
 import house from '../assets/services/house.jpg';
 import entrance from '../assets/services/entrance.jpg';
 
+// function ControlledCarousel() {
+// 	const [index, setIndex] = useState(0);
+
+// 	const handleSelect = (selectedIndex, e) => {
+// 		setIndex(selectedIndex);
+// 	};
+
+// 	return (
+// 		<Carousel activeIndex={index} onSelect={handleSelect}>
+// 			<Carousel.Item>
+// 				<img className='d-block' src={house} alt='house' />
+// 			</Carousel.Item>
+// 			<Carousel.Item>
+// 				<img className='d-block' src={entrance} alt='house entrance' />
+// 			</Carousel.Item>
+// 			<Carousel.Item>
+// 				<img className='d-block' src={steps} alt='cement steps' />
+// 			</Carousel.Item>
+// 			<Carousel.Item>
+// 				<img className='d-block' src={polebarn} alt='polebarn' />
+// 			</Carousel.Item>
+// 			<Carousel.Item>
+// 				<img className='d-block' src={services1} alt='fence' />
+// 			</Carousel.Item>
+// 			<Carousel.Item>
+// 				<img className='d-block' src={poolPatio} alt='pool patio' />
+// 			</Carousel.Item>
+// 			<Carousel.Item>
+// 				<img className='d-block' src={services4} alt='indoor stairs' />
+// 			</Carousel.Item>
+// 			<Carousel.Item>
+// 				<img className='d-block' src={services5} alt='shower' />
+// 			</Carousel.Item>
+// 			<Carousel.Item>
+// 				<img className='d-block' src={services6} alt='outdoor stairs' />
+// 			</Carousel.Item>
+// 		</Carousel>
+// 	);
+// }
+
 class Services extends Component {
 	render() {
 		return (
@@ -22,6 +62,7 @@ class Services extends Component {
 					<h2>SERVICES</h2>
 				</div>
 				<div id='servicesMain'>
+					{/* <ControlledCarousel /> */}
 					<Carousel>
 						<Carousel.Item>
 							<img className='d-block' src={house} alt='house' />
@@ -51,8 +92,8 @@ class Services extends Component {
 							<img className='d-block' src={services6} alt='outdoor stairs' />
 						</Carousel.Item>
 					</Carousel>
-					<div id='carouselExampleControls' class='carousel slide' data-ride='carousel'></div>
 				</div>
+
 				<div id='servicesParagraph'>
 					<p>
 						<strong>Creedence Contracting LLC</strong> is an Independent Contracting Company with over 10 years of experience. Our company specializes in Outdoor Structures such as Custom
