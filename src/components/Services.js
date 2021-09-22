@@ -8,13 +8,16 @@ import polebarn2 from '../assets/services/polebarn2.jpeg';
 import polebarn from '../assets/services/polebarn.jpg';
 import services1 from '../assets/services/services1.jpg';
 import poolPatio from '../assets/services/poolPatio.jpg';
-import patio from '../assets/services/patio.jpeg';
+import patio from '../assets/services/patio.jpg';
 import services4 from '../assets/services/services4.jpg';
 import services5 from '../assets/services/services5.jpg';
 import services6 from '../assets/services/services6.jpg';
 import house from '../assets/services/house.jpg';
 import entrance from '../assets/services/entrance.jpg';
 import shower from '../assets/services/shower.jpeg';
+import deck from '../assets/services/deck.jpg';
+import deck2 from '../assets/services/deck2.jpg';
+import patio2 from '../assets/services/patio2.jpg';
 
 class Services extends Component {
 	render() {
@@ -28,6 +31,12 @@ class Services extends Component {
 					{/* <ControlledCarousel /> */}
 					<Carousel>
 						<Carousel.Item>
+							<img className='d-block' src={deck} alt='deck' />
+						</Carousel.Item>
+						<Carousel.Item>
+							<img className='d-block' src={deck2} alt='deck' />
+						</Carousel.Item>
+						<Carousel.Item>
 							<img className='d-block' src={house} alt='house' />
 						</Carousel.Item>
 						<Carousel.Item>
@@ -35,6 +44,9 @@ class Services extends Component {
 						</Carousel.Item>
 						<Carousel.Item>
 							<img className='d-block' src={patio} alt='patio' />
+						</Carousel.Item>
+						<Carousel.Item>
+							<img className='d-block' src={patio2} alt='patio' />
 						</Carousel.Item>
 						<Carousel.Item>
 							<img className='d-block' src={entrance} alt='house entrance' />
