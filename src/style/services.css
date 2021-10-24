@@ -105,6 +105,10 @@
 }
 
 @media (max-width: 800px) {
+	#patio2 {
+		width: 300px !important;
+	}
+
 	#servicesMain img {
 		width: 400px;
 		height: auto;
