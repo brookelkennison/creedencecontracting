@@ -18,6 +18,9 @@ import shower from '../assets/services/shower.jpeg';
 import deck from '../assets/services/deck.jpg';
 import deck2 from '../assets/services/deck2.jpg';
 import patio2 from '../assets/services/patio2.jpg';
+import shower2 from '../assets/services/shower2.jpg';
+import polebarn3 from '../assets/services/polebarn3.jpg';
+import insideGarage from '../assets/services/insideGarage.jpg';
 
 class Services extends Component {
 	render() {
@@ -30,6 +33,15 @@ class Services extends Component {
 				<div id='servicesMain'>
 					{/* <ControlledCarousel /> */}
 					<Carousel>
+						<Carousel.Item>
+							<img className='d-block' src={shower2} alt='custom shower' />
+						</Carousel.Item>
+						<Carousel.Item>
+							<img className='d-block' src={polebarn3} alt='polebarn' />
+						</Carousel.Item>
+						<Carousel.Item>
+							<img className='d-block' src={insideGarage} alt='inside garage' />
+						</Carousel.Item>
 						<Carousel.Item>
 							<img className='d-block' src={deck} alt='deck' />
 						</Carousel.Item>
