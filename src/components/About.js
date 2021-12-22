@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../style/about.css';
 import '../index.css';
-import about from '../assets/about.jpg';
+import staff from '../assets/staff.jpg';
 
 class About extends Component {
 	render() {
@@ -11,7 +11,7 @@ class About extends Component {
 					<h2>ABOUT</h2>
 				</div>
 				<div id='aboutMain'>
-					<img src={about} alt='Deck' />
+					<img src={staff} alt='staff' />
 					<div>
 						<h3>Committed</h3>
 						<h4>We are committed to customer satisfaction.</h4>

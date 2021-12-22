@@ -2,6 +2,7 @@
 	background: linear-gradient(rgba(50, 50, 50, 0.7), rgba(50, 50, 50, 0.7)), url('../assets/background.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center;
 	height: 400px;
 	width: 100%;
 	display: flex;
@@ -13,16 +14,31 @@
 	z-index: -1;
 }
 
-.Slogan > h1 {
+.Slogan > div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.Slogan > div > h1 {
 	color: #f7f7f7;
 	font-family: omnes-pro, sans-serif;
 	font-weight: 500;
 	margin: 0px;
 	padding-top: 150px;
 	text-shadow: 0px 1px 5px black;
-	font-size: 36px;
+	font-size: 28px;
 	width: 300px;
 	text-align: center;
+}
+
+.Slogan > div > h3 {
+	font-family: omnes-pro, sans-serif;
+	text-align: center;
+	color: #f1bc5c;
+	text-shadow: 1px 1px black;
+	font-size: 16px;
+	padding: 20px;
 }
 
 .Slogan > img {
@@ -35,9 +51,13 @@
 		height: 900px;
 	}
 
-	.Slogan > h1 {
+	.Slogan > div > h1 {
 		font-size: 48px;
 		padding: 400px 30px 0px 30px;
 		width: auto;
+	}
+
+	.Slogan > div > h3 {
+		font-size: 24px;
 	}
 }

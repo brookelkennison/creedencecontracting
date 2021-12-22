@@ -26,7 +26,7 @@
 
 #footerMain {
 	display: flex;
-	margin: 20px;
+	padding: 20px;
 	justify-content: space-between;
 }
 
@@ -73,6 +73,8 @@
 
 #mobileCopyright {
 	display: none;
+	margin: 0;
+	padding: 15px;
 }
 
 @media (max-width: 600px) {
@@ -83,7 +85,6 @@
 	#footerMain {
 		display: flex;
 		flex-direction: column-reverse;
-		margin: 0;
 	}
 
 	#location {

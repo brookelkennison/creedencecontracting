@@ -16,6 +16,7 @@ import entrance from '../assets/services/entrance.jpg';
 import shower from '../assets/services/shower.jpg';
 import deck from '../assets/services/deck.jpg';
 import deck2 from '../assets/services/deck2.jpg';
+import deck3 from '../assets/services/deck3.jpg';
 import patio2 from '../assets/services/patio2.jpg';
 import stairs from '../assets/services/stairs.jpg';
 import stairs2 from '../assets/services/stairs2.jpg';
@@ -28,14 +29,18 @@ export default function Services() {
 	const slider = React.useRef(null);
 	const settings = {
 		autoplay: true,
-		arrows: false,
 		autoplaySpeed: 3000,
+		arrows: false,
 		className: 'slider variable-width',
 		dots: false,
-		infinite: true,
-		slidesToShow: 1,
 		centerMode: true,
+		centerPadding: 0,
 		variableWidth: true,
+		variableHeight: true,
+		infinite: true,
+		slidesToShow: 2,
+		slidesToScroll: 1,
+		initialSlide: 1,
 		responsive: [
 			{
 				breakpoint: 1024,
@@ -43,26 +48,28 @@ export default function Services() {
 					slidesToShow: 3,
 					slidesToScroll: 3,
 					infinite: true,
+					centerMode: true,
 				},
 			},
-			// {
-			// 	breakpoint: 600,
-			// 	settings: {
-			// 		slidesToShow: 2,
-			// 		slidesToScroll: 2,
-			// 		// initialSlide: 2,
-			// 		// infinite: true,
-			// 	},
-			// },
-			// {
-			// 	breakpoint: 480,
-			// 	settings: {
-			// 		slidesToShow: 2,
-			// 		slidesToScroll: 2,
-			// 		infinite: true,
-
-			// 	},
-			// },
+			{
+				breakpoint: 600,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2,
+					initialSlide: 2,
+					infinite: true,
+					centerMode: true,
+				},
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					infinite: true,
+					centerMode: true,
+				},
+			},
 		],
 	};
 
@@ -95,6 +102,9 @@ export default function Services() {
 						</div>
 						<div>
 							<img className='d-block' src={deck2} alt='deck' />
+						</div>
+						<div>
+							<img className='d-block' src={deck3} alt='deck' />
 						</div>
 						<div>
 							<img className='d-block' src={house} alt='house' />
