@@ -60,6 +60,7 @@ h2 {
 	max-width: 400px;
 	height: auto;
 	max-height: 534px;
+	border-radius: 50%;
 }
 
 #aboutMain > div {

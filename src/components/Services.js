@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../style/services.css';
 import '../index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Carousel from 'react-bootstrap/Carousel';
+import Slider from 'react-slick';
 import steps from '../assets/services/steps.jpg';
 import polebarn2 from '../assets/services/polebarn2.jpg';
 import polebarn from '../assets/services/polebarn.jpg';
@@ -16,6 +16,7 @@ import entrance from '../assets/services/entrance.jpg';
 import shower from '../assets/services/shower.jpg';
 import deck from '../assets/services/deck.jpg';
 import deck2 from '../assets/services/deck2.jpg';
+import deck3 from '../assets/services/deck3.jpg';
 import patio2 from '../assets/services/patio2.jpg';
 import stairs from '../assets/services/stairs.jpg';
 import stairs2 from '../assets/services/stairs2.jpg';
@@ -24,82 +25,138 @@ import shower2 from '../assets/services/shower2.jpg';
 import polebarn3 from '../assets/services/polebarn3.jpg';
 import insideGarage from '../assets/services/insideGarage.jpg';
 
-class Services extends Component {
-	render() {
-		return (
-			<div className='Services'>
-				<div className='transitionBlock'></div>
-				<div className='sectionHeader' id='servicesHeader'>
-					<h2>SERVICES</h2>
+export default function Services() {
+	const slider = React.useRef(null);
+	const settings = {
+		autoplay: true,
+		autoplaySpeed: 3000,
+		arrows: false,
+		className: 'slider variable-width',
+		dots: false,
+		centerMode: true,
+		centerPadding: 0,
+		variableWidth: true,
+		variableHeight: true,
+		infinite: true,
+		slidesToShow: 2,
+		slidesToScroll: 1,
+		initialSlide: 1,
+		responsive: [
+			{
+				breakpoint: 1024,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 3,
+					infinite: true,
+					centerMode: true,
+				},
+			},
+			{
+				breakpoint: 600,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2,
+					initialSlide: 2,
+					infinite: true,
+					centerMode: true,
+				},
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					infinite: true,
+					centerMode: true,
+				},
+			},
+		],
+	};
+
+	return (
+		<div className='Services'>
+			<div className='transitionBlock'></div>
+			<div className='sectionHeader' id='servicesHeader'>
+				<h2>SERVICES</h2>
+			</div>
+			<div id='servicesMain'>
+				{/* <ControlledCarousel /> */}
+				{/* <button id='prev-arrow' onClick={() => slider?.current?.slickPrev()}> */}
+				<div>
+					<img src='https://img.icons8.com/ios/50/000000/circled-left-2.png' id='prev-arrow' onClick={() => slider?.current?.slickPrev()} />
 				</div>
-				<div id='servicesMain'>
-					{/* <ControlledCarousel /> */}
-					<Carousel>
-						<Carousel.Item>
+				{/* </button> */}
+				<div className='slider-container'>
+					<Slider ref={slider} {...settings}>
+						<div>
 							<img className='d-block' src={shower2} alt='custom shower' />
-						</Carousel.Item>
-						<Carousel.Item>
+						</div>
+						<div>
 							<img className='d-block' src={polebarn3} alt='polebarn' />
-						</Carousel.Item>
-						<Carousel.Item>
+						</div>
+						<div>
 							<img className='d-block' src={insideGarage} alt='inside garage' />
-						</Carousel.Item>
-						<Carousel.Item>
+						</div>
+						<div>
 							<img className='d-block' src={deck} alt='deck' />
-						</Carousel.Item>
-						<Carousel.Item>
+						</div>
+						<div>
 							<img className='d-block' src={deck2} alt='deck' />
-						</Carousel.Item>
-						<Carousel.Item>
+						</div>
+						<div>
+							<img className='d-block' src={deck3} alt='deck' />
+						</div>
+						<div>
 							<img className='d-block' src={house} alt='house' />
-						</Carousel.Item>
-						<Carousel.Item>
+						</div>
+						<div>
 							<img className='d-block' src={shower} alt='shower' />
-						</Carousel.Item>
-						<Carousel.Item>
+						</div>
+						<div>
 							<img className='d-block' src={patio} alt='patio' />
-						</Carousel.Item>
-						<Carousel.Item>
+						</div>
+						<div>
 							<img className='d-block' id='patio2' src={patio2} alt='patio' />
-						</Carousel.Item>
-						<Carousel.Item>
+						</div>
+						<div>
 							<img className='d-block' src={entrance} alt='house entrance' />
-						</Carousel.Item>
-						<Carousel.Item>
+						</div>
+						<div>
 							<img className='d-block' src={polebarn2} alt='polebarn' />
-						</Carousel.Item>
-						<Carousel.Item>
+						</div>
+						<div>
 							<img className='d-block' src={steps} alt='cement steps' />
-						</Carousel.Item>
-						<Carousel.Item>
+						</div>
+						<div>
 							<img className='d-block' src={polebarn} alt='polebarn' />
-						</Carousel.Item>
-						<Carousel.Item>
+						</div>
+						<div>
 							<img className='d-block' src={services1} alt='fence' />
-						</Carousel.Item>
-						<Carousel.Item>
+						</div>
+						<div>
 							<img className='d-block' src={poolPatio} alt='pool patio' />
-						</Carousel.Item>
-						<Carousel.Item>
+						</div>
+						<div>
 							<img className='d-block' src={stairs} alt='stairs' />
-						</Carousel.Item>
-						<Carousel.Item>
+						</div>
+						<div>
 							<img className='d-block' src={stairs2} alt='stairs' />
-						</Carousel.Item>
-						<Carousel.Item>
+						</div>
+						<div>
 							<img className='d-block' src={frontEntry} alt='front entry' />
-						</Carousel.Item>
-						<Carousel.Item>
+						</div>
+						<div>
 							<img className='d-block' src={services5} alt='shower' />
-						</Carousel.Item>
-						<Carousel.Item>
+						</div>
+						<div>
 							<img className='d-block' src={services6} alt='outdoor stairs' />
-						</Carousel.Item>
-					</Carousel>
+						</div>
+					</Slider>
+				</div>
+				<div>
+					<img src='https://img.icons8.com/ios/50/000000/circled-left-2.png' id='next-arrow' onClick={() => slider?.current?.slickNext()} />
 				</div>
 			</div>
-		);
-	}
+		</div>
+	);
 }
-
-export default Services;
