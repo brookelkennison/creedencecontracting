@@ -24,6 +24,9 @@ import frontEntry from '../assets/services/frontEntry.jpg';
 import shower2 from '../assets/services/shower2.jpg';
 import polebarn3 from '../assets/services/polebarn3.jpg';
 import insideGarage from '../assets/services/insideGarage.jpg';
+import aFrame from '../assets/services/aFrame.jpg';
+import aFrame2 from '../assets/services/aFrame2.jpg';
+import aFramePantry from '../assets/services/aFramePantry.jpg';
 
 export default function Services() {
 	const slider = React.useRef(null);
@@ -88,6 +91,15 @@ export default function Services() {
 				{/* </button> */}
 				<div className='slider-container'>
 					<Slider ref={slider} {...settings}>
+						<div>
+							<img className='d-block' src={aFrame} alt='A-frame' />
+						</div>
+						<div>
+							<img className='d-block' src={aFramePantry} alt='custom pantry' />
+						</div>
+						<div>
+							<img className='d-block' src={aFrame2} alt='a-frame' />
+						</div>
 						<div>
 							<img className='d-block' src={shower2} alt='custom shower' />
 						</div>

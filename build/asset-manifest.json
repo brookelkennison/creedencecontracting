@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.b587a7f8.chunk.css",
-    "main.js": "/static/js/main.2a045407.chunk.js",
-    "main.js.map": "/static/js/main.2a045407.chunk.js.map",
+    "main.js": "/static/js/main.577a77e3.chunk.js",
+    "main.js.map": "/static/js/main.577a77e3.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.99997b8c.js",
     "runtime-main.js.map": "/static/js/runtime-main.99997b8c.js.map",
     "static/css/2.15a7a700.chunk.css": "/static/css/2.15a7a700.chunk.css",
@@ -14,6 +14,9 @@
     "static/css/2.15a7a700.chunk.css.map": "/static/css/2.15a7a700.chunk.css.map",
     "static/css/main.b587a7f8.chunk.css.map": "/static/css/main.b587a7f8.chunk.css.map",
     "static/js/2.2e44a45c.chunk.js.LICENSE.txt": "/static/js/2.2e44a45c.chunk.js.LICENSE.txt",
+    "static/media/aFrame.510beed8.jpg": "/static/media/aFrame.510beed8.jpg",
+    "static/media/aFrame2.3c2a6837.jpg": "/static/media/aFrame2.3c2a6837.jpg",
+    "static/media/aFramePantry.4f63e939.jpg": "/static/media/aFramePantry.4f63e939.jpg",
     "static/media/arrowTransition.a2c2f40a.jpg": "/static/media/arrowTransition.a2c2f40a.jpg",
     "static/media/slogan.css": "/static/media/background.4915fdb0.jpg",
     "static/media/deck.4915fdb0.jpg": "/static/media/deck.4915fdb0.jpg",
@@ -45,6 +48,6 @@
     "static/css/2.15a7a700.chunk.css",
     "static/js/2.2e44a45c.chunk.js",
     "static/css/main.b587a7f8.chunk.css",
-    "static/js/main.2a045407.chunk.js"
+    "static/js/main.577a77e3.chunk.js"
   ]
 }
