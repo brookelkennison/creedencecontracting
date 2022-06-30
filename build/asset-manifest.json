@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.b587a7f8.chunk.css",
-    "main.js": "/static/js/main.577a77e3.chunk.js",
-    "main.js.map": "/static/js/main.577a77e3.chunk.js.map",
+    "main.js": "/static/js/main.6652ce8c.chunk.js",
+    "main.js.map": "/static/js/main.6652ce8c.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.99997b8c.js",
     "runtime-main.js.map": "/static/js/runtime-main.99997b8c.js.map",
     "static/css/2.15a7a700.chunk.css": "/static/css/2.15a7a700.chunk.css",
@@ -29,6 +29,7 @@
     "static/media/logo.b6992514.jpg": "/static/media/logo.b6992514.jpg",
     "static/media/patio.05ca586a.jpg": "/static/media/patio.05ca586a.jpg",
     "static/media/patio2.86e26ea4.jpg": "/static/media/patio2.86e26ea4.jpg",
+    "static/media/poleBarn4.69e4df78.jpg": "/static/media/poleBarn4.69e4df78.jpg",
     "static/media/polebarn.111da2c7.jpg": "/static/media/polebarn.111da2c7.jpg",
     "static/media/polebarn2.a6a2825a.jpg": "/static/media/polebarn2.a6a2825a.jpg",
     "static/media/polebarn3.8d64636b.jpg": "/static/media/polebarn3.8d64636b.jpg",
@@ -48,6 +49,6 @@
     "static/css/2.15a7a700.chunk.css",
     "static/js/2.2e44a45c.chunk.js",
     "static/css/main.b587a7f8.chunk.css",
-    "static/js/main.577a77e3.chunk.js"
+    "static/js/main.6652ce8c.chunk.js"
   ]
 }

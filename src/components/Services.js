@@ -27,6 +27,7 @@ import insideGarage from '../assets/services/insideGarage.jpg';
 import aFrame from '../assets/services/aFrame.jpg';
 import aFrame2 from '../assets/services/aFrame2.jpg';
 import aFramePantry from '../assets/services/aFramePantry.jpg';
+import poleBarn4 from '../assets/services/poleBarn4.jpg';
 
 export default function Services() {
 	const slider = React.useRef(null);
@@ -91,6 +92,9 @@ export default function Services() {
 				{/* </button> */}
 				<div className='slider-container'>
 					<Slider ref={slider} {...settings}>
+						<div>
+							<img className='d-block' src={poleBarn4} alt='poleBarn4' />
+						</div>
 						<div>
 							<img className='d-block' src={aFrame} alt='A-frame' />
 						</div>
