@@ -28,6 +28,10 @@ import aFrame from '../assets/services/aFrame.jpg';
 import aFrame2 from '../assets/services/aFrame2.jpg';
 import aFramePantry from '../assets/services/aFramePantry.jpg';
 import poleBarn4 from '../assets/services/poleBarn4.jpg';
+import img1 from '../assets/services/img1.jpg';
+import img2 from '../assets/services/img2.jpg';
+import img3 from '../assets/services/img3.jpg';
+import img4 from '../assets/services/img4.jpg';
 
 export default function Services() {
 	const slider = React.useRef(null);
@@ -92,6 +96,18 @@ export default function Services() {
 				{/* </button> */}
 				<div className='slider-container'>
 					<Slider ref={slider} {...settings}>
+						<div>
+							<img className='d-block' src={img4} alt='flooring' />
+						</div>
+						<div>
+							<img className='d-block' src={img3} alt='flooring' />
+						</div>
+						<div>
+							<img className='d-block' src={img2} alt='stairs' />
+						</div>
+						<div>
+							<img className='d-block' src={img1} alt='foundation' />
+						</div>
 						<div>
 							<img className='d-block' src={poleBarn4} alt='poleBarn4' />
 						</div>
