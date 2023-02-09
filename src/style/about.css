@@ -57,10 +57,10 @@ h2 {
 
 #aboutMain > img {
 	width: 100%;
-	max-width: 400px;
-	height: auto;
-	max-height: 534px;
-	border-radius: 50%;
+    width: 345px;
+    height: 345px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 #aboutMain > div {
@@ -107,6 +107,7 @@ p {
 
 	#aboutMain {
 		flex-direction: column;
+		align-items: center;
 	}
 
 	h2 {
@@ -132,6 +133,8 @@ p {
 
 	#aboutMain > img {
 		margin: 70px 0px 0px 10px;
+		width: 450px;
+    	height: 450px;
 	}
 
 	#aboutMain > div {

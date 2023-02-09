@@ -24,6 +24,12 @@ class Header extends Component {
 	render() {
 		return (
 			<div className='Header'>
+				<div class='header-contact'>
+					<p>CALL US TODAY!</p>
+					<p>
+						<a href='tel:+2602480210'>260-248-0210</a>
+					</p>
+				</div>
 				<div id='header'>
 					<div id='logo'>
 						<img src={logo} alt='Logo' onClick={this.scroll} name='home' />
