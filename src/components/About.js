@@ -31,9 +31,7 @@ class About extends Component {
 						<div className='block2'></div>
 					</div>
 					<p>
-						<strong>Cheap Labor isn’t Skilled, Skilled labor isn’t cheap. </strong> By investing into our company to complete your project, you are investing into a quality product,
-						without any shortcuts taken, to bring you the best possible end result. We will not compete with contractors who offer cheap labor and a sub par product. We will not sell jobs
-						by offering the lowest bid. We are trademarked by skill, quality, and workmanship and will back our work with customer satisfaction.
+						<strong>Cheap Labor isn’t Skilled, Skilled labor isn’t cheap. </strong> By investing into our company to complete your project, you are investing into a quality product, without any shortcuts taken, to bring you the best possible end result. We will not compete with contractors who offer cheap labor and a sub par product. We will not sell jobs by offering the lowest bid. We are trademarked by skill, quality, and workmanship and will back our work with customer satisfaction.
 					</p>
 				</div>
 			</div>
