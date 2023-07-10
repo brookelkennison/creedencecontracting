@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.f6855079.chunk.css",
-    "main.js": "/static/js/main.24c1e979.chunk.js",
-    "main.js.map": "/static/js/main.24c1e979.chunk.js.map",
+    "main.js": "/static/js/main.ca0ad7e2.chunk.js",
+    "main.js.map": "/static/js/main.ca0ad7e2.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.99997b8c.js",
     "runtime-main.js.map": "/static/js/runtime-main.99997b8c.js.map",
     "static/css/2.15a7a700.chunk.css": "/static/css/2.15a7a700.chunk.css",
@@ -35,7 +35,10 @@
     "static/media/img3.cef63570.jpg": "/static/media/img3.cef63570.jpg",
     "static/media/img4.39fb817e.jpg": "/static/media/img4.39fb817e.jpg",
     "static/media/insideGarage.ed30795c.jpg": "/static/media/insideGarage.ed30795c.jpg",
+    "static/media/kitchen-remodel.fce08fd1.jpg": "/static/media/kitchen-remodel.fce08fd1.jpg",
     "static/media/logo.b6992514.jpg": "/static/media/logo.b6992514.jpg",
+    "static/media/new-construction-exterior-2.b185f08b.jpg": "/static/media/new-construction-exterior-2.b185f08b.jpg",
+    "static/media/new-construction-exterior.f7aad7f1.jpg": "/static/media/new-construction-exterior.f7aad7f1.jpg",
     "static/media/patio.05ca586a.jpg": "/static/media/patio.05ca586a.jpg",
     "static/media/patio2.86e26ea4.jpg": "/static/media/patio2.86e26ea4.jpg",
     "static/media/poleBarn4.69e4df78.jpg": "/static/media/poleBarn4.69e4df78.jpg",
@@ -43,6 +46,7 @@
     "static/media/polebarn2.a6a2825a.jpg": "/static/media/polebarn2.a6a2825a.jpg",
     "static/media/polebarn3.8d64636b.jpg": "/static/media/polebarn3.8d64636b.jpg",
     "static/media/poolPatio.56da5233.jpg": "/static/media/poolPatio.56da5233.jpg",
+    "static/media/screened-porch.cca8a976.jpg": "/static/media/screened-porch.cca8a976.jpg",
     "static/media/services1.262c9ece.jpg": "/static/media/services1.262c9ece.jpg",
     "static/media/services5.48eb9d80.jpg": "/static/media/services5.48eb9d80.jpg",
     "static/media/services6.0bd9e131.jpg": "/static/media/services6.0bd9e131.jpg",
@@ -58,6 +62,6 @@
     "static/css/2.15a7a700.chunk.css",
     "static/js/2.2e44a45c.chunk.js",
     "static/css/main.f6855079.chunk.css",
-    "static/js/main.24c1e979.chunk.js"
+    "static/js/main.ca0ad7e2.chunk.js"
   ]
 }

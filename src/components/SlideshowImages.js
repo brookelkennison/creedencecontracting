@@ -34,6 +34,10 @@ import image31 from '../assets/services/image31.jpg';
 import image32 from '../assets/services/image32.jpg';
 import image33 from '../assets/services/image33.jpg';
 import image34 from '../assets/services/image34.jpg';
+import image35 from '../assets/services/screened-porch.jpg';
+import image36 from '../assets/services/new-construction-exterior.jpg';
+import image37 from '../assets/services/new-construction-exterior-2.jpg';
+import image38 from '../assets/services/kitchen-remodel.jpg';
 
 export const images = [
 	{
@@ -137,5 +141,17 @@ export const images = [
 	},
 	{
 		image: image34,
+	},
+	{
+		image: image35,
+	},
+	{
+		image: image36,
+	},
+	{
+		image: image37,
+	},
+	{
+		image: image38,
 	},
 ];
