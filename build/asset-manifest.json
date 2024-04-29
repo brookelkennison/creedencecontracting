@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.f6855079.chunk.css",
-    "main.js": "/static/js/main.ca0ad7e2.chunk.js",
-    "main.js.map": "/static/js/main.ca0ad7e2.chunk.js.map",
+    "main.js": "/static/js/main.729e2a9e.chunk.js",
+    "main.js.map": "/static/js/main.729e2a9e.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.99997b8c.js",
     "runtime-main.js.map": "/static/js/runtime-main.99997b8c.js.map",
     "static/css/2.15a7a700.chunk.css": "/static/css/2.15a7a700.chunk.css",
@@ -52,7 +52,6 @@
     "static/media/services6.0bd9e131.jpg": "/static/media/services6.0bd9e131.jpg",
     "static/media/shower.242fe038.jpg": "/static/media/shower.242fe038.jpg",
     "static/media/shower2.a51cb837.jpg": "/static/media/shower2.a51cb837.jpg",
-    "static/media/staff.f0a0ee89.jpg": "/static/media/staff.f0a0ee89.jpg",
     "static/media/stairs.d0da7ab3.jpg": "/static/media/stairs.d0da7ab3.jpg",
     "static/media/stairs2.df20ddb7.jpg": "/static/media/stairs2.df20ddb7.jpg",
     "static/media/steps.c65496eb.jpg": "/static/media/steps.c65496eb.jpg"
@@ -62,6 +61,6 @@
     "static/css/2.15a7a700.chunk.css",
     "static/js/2.2e44a45c.chunk.js",
     "static/css/main.f6855079.chunk.css",
-    "static/js/main.ca0ad7e2.chunk.js"
+    "static/js/main.729e2a9e.chunk.js"
   ]
 }
